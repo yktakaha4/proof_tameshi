@@ -1,0 +1,132 @@
+$base-font-size: 4mm;
+$border-thin: thin solid black;
+$border-medium: medium solid black;
+@page {
+    size: A4 landscape;
+}
+
+html,
+body {
+    font-size: $base-font-size;
+    line-height: 1.0;
+}
+
+table {
+    border: $border-medium;
+    border-collapse: collapse;
+    th,
+    td {
+        border: $border-thin;
+    }
+}
+
+.p1 {
+    border: $border-thin;
+    display: flex;
+    .tag-area {
+        width: 40%;
+        background-color: lightpink;
+        position: relative;
+        span {
+            border: $border-thin;
+        }
+        .para1 {
+            position: absolute;
+            top: 5mm;
+            left: 10mm;
+        }
+        .para2 {
+            position: absolute;
+            top: 15mm;
+            left: 10mm;
+        }
+        .para3 {
+            position: absolute;
+            top: 1mm;
+            right: 1mm;
+        }
+        .para4 {
+            position: absolute;
+            top: 10.5mm;
+            right: 0.5mm;
+        }
+        .moji-area {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .purchase-area {
+        width: 60%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        .header {
+            $title-font-size: $base-font-size * 1.25;
+            $title-width: $title-font-size * 9;
+            text-align: center;
+            flex-grow: 1;
+            .logo {
+                width: $title-width;
+            }
+            .title {
+                padding-top: 0.25em;
+                font-size: $title-font-size;
+            }
+        }
+        .order {
+            th,
+            td {
+                padding: 0.25em;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        .details {
+            position: relative;
+            border: $border-medium;
+            width: 100%;
+            height: 10cm;
+            .notes {
+                position: absolute;
+                bottom: 5mm;
+                left: 5mm;
+            }
+        }
+        .shipping {
+            width: 100%;
+            th {
+                width: 5%;
+                height: 7em;
+                text-align: center;
+                div {
+                    display: inline-block;
+                    height: inherit;
+                    -webkit-writing-mode: vertical-rl;
+                    -ms-writing-mode: tb-rl;
+                    writing-mode: vertical-rl;
+                }
+            }
+            td {
+                width: 45%;
+                height: 7em;
+            }
+        }
+        .notice {
+            width: 100%;
+            .title {
+                display: inline-block;
+                padding: 0.25em 3em;
+                border: $border-medium;
+                border-bottom: 0;
+            }
+            .content {
+                border: $border-medium;
+                height: 5em;
+            }
+        }
+    }
+}

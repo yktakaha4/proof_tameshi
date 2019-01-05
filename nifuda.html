@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.min.css">
+    <link rel="stylesheet" href="nifuda.css">
+</head>
+
+<body class="A4 landscape">
+    <section class="sheet p1">
+        <section class="tag-area">
+            <span class="para1">上:5mm、左:10mm</span>
+            <span class="para2">上:15mm、左:10mm</span>
+            <span class="para3">上:1mm、右:1mm</span>
+            <span class="para4">上:10.5mm、右:0.5mm</span>
+            <div class="moji-area">
+                <div style="font-size:0.5mm;">0.5mmの文字</div>
+                <div style="font-size:1mm;">1mmの文字</div>
+                <div style="font-size:2mm;">2mmの文字</div>
+                <div style="font-size:3mm;">3mmの文字</div>
+                <div style="font-size:4mm;">4mmの文字</div>
+                <div style="font-size:5mm;">5mmの文字</div>
+                <div style="font-size:1cm;">1cmの文字</div>
+                <div style="font-size:2cm;">2cmの文字</div>
+                <div style="font-size:3cm;">3cmの</div>
+                <div style="font-size:5cm;">5cm</div>
+            </div>
+        </section>
+        <section class="purchase-area">
+            <div class="header">
+                <img class="logo" src="hands-logo.jpg">
+                <div class="title">お買い上げ明細</div>
+            </div>
+            <table class="order">
+                <tr>
+                    <th rowspan="2">ご注文番号</th>
+                    <td rowspan="2">
+                        <svg class="barcode" jsbarcode-value="1234567" jsbarcode-height="30" jsbarcode-displayvalue="false">
+                        </svg>
+                        <div>hands-net-1234567</div>
+                    </td>
+                    <th>個口数</th>
+                    <td>1/1</td>
+                </tr>
+                <tr>
+                    <th>ご注文日</th>
+                    <td>2018/12/14</td>
+                </tr>
+            </table>
+            <div class="details">縦:10cm
+                <div class="notes">
+                    注意事項欄を左下5mmから記載<br>xxxxxx<br>yyyyy
+                </div>
+            </div>
+            <table class="shipping">
+                <th>
+                    <div>お届け先</div>
+                </th>
+                <td>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスストテストテストテス</td>
+                <th>
+                    <div>ご依頼主</div>
+                </th>
+                <td>縦：7em</td>
+            </table>
+            <div class="notice">
+                <div class="title">東急ハンズからのお知らせ</div>
+                <div class="content">お知らせ</div>
+            </div>
+        </section>
+    </section>
+    <script>(function () { JsBarcode(".barcode").init(); })();</script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+@page {
+  size: A4 landscape;
+}
+
+html,
+body {
+  font-size: 4mm;
+  line-height: 1.0;
+}
+
+table {
+  border: medium solid black;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: thin solid black;
+}
+
+.p1 {
+  border: thin solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p1 .tag-area {
+  width: 40%;
+  background-color: lightpink;
+  position: relative;
+}
+
+.p1 .tag-area span {
+  border: thin solid black;
+}
+
+.p1 .tag-area .para1 {
+  position: absolute;
+  top: 5mm;
+  left: 10mm;
+}
+
+.p1 .tag-area .para2 {
+  position: absolute;
+  top: 15mm;
+  left: 10mm;
+}
+
+.p1 .tag-area .para3 {
+  position: absolute;
+  top: 1mm;
+  right: 1mm;
+}
+
+.p1 .tag-area .para4 {
+  position: absolute;
+  top: 10.5mm;
+  right: 0.5mm;
+}
+
+.p1 .tag-area .moji-area {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.p1 .purchase-area {
+  width: 60%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.p1 .purchase-area .header {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.p1 .purchase-area .header .logo {
+  width: 45mm;
+}
+
+.p1 .purchase-area .header .title {
+  padding-top: 0.25em;
+  font-size: 5mm;
+}
+
+.p1 .purchase-area .order th,
+.p1 .purchase-area .order td {
+  padding: 0.25em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.p1 .purchase-area .details {
+  position: relative;
+  border: medium solid black;
+  width: 100%;
+  height: 10cm;
+}
+
+.p1 .purchase-area .details .notes {
+  position: absolute;
+  bottom: 5mm;
+  left: 5mm;
+}
+
+.p1 .purchase-area .shipping {
+  width: 100%;
+}
+
+.p1 .purchase-area .shipping th {
+  width: 5%;
+  height: 7em;
+  text-align: center;
+}
+
+.p1 .purchase-area .shipping th div {
+  display: inline-block;
+  height: inherit;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.p1 .purchase-area .shipping td {
+  width: 45%;
+  height: 7em;
+}
+
+.p1 .purchase-area .notice {
+  width: 100%;
+}
+
+.p1 .purchase-area .notice .title {
+  display: inline-block;
+  padding: 0.25em 3em;
+  border: medium solid black;
+  border-bottom: 0;
+}
+
+.p1 .purchase-area .notice .content {
+  border: medium solid black;
+  height: 5em;
+}
+/*# sourceMappingURL=nifuda.css.map */
